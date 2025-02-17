@@ -26,3 +26,6 @@ document.write(myMessage);
 // Assign multiple variables in one statement
 let name = "John", age = 30, city = "New York";
 document.write(name);
+
+// Write an expression
+document.write(5 + 5);
