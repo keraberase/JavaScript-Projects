@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive Time and Temperature Checker</title>
 </head>
 <body>
-    
-        <script src="JS/main.js"></script>
+    <!-- Button to check current time of day -->
+    <button id="time" onclick="whatTimeIsIt()">Check Time</button>
+
+    <!-- Button to determine if it's morning or evening -->
+    <button id="time2" onclick="whatTimeIsIt2()">Time for what?</button>
+
+    <!-- Input for user to enter their temperature -->
+    <p>How is your temperature?</p>
+    <input id="temp" type="number">
+    <p id="temperature"></p>
+    <button onclick="whatTemperature()">Check</button>
+
+    <!-- Button to check whether it's morning, afternoon, or evening -->
+    <p id="timeOfDay"></p>
+    <button onclick="timeFunction()">Time of Day</button>
+
+    <!-- Another input for body temperature check -->
+    <p>How is your temperature?</p>
+    <input id="temp2" type="number">
+    <p id="temperature2"></p>
+    <button onclick="whatTemperature2()">Check</button>
+
+    <!-- Linking external JavaScript file -->
+    <script src="JS/main.js"></script>
 </body>
 </html>
