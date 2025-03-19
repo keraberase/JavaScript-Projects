@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+    <!-- Countdown Timer -->
+     <p>How many seconds would you like to set alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Start</button>
+        <p id="timer"></p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <ul>
+    <li class="fade">
+      <p class="numbertext">1 / 4</p>
+      <img src="./src/image/img_nature_wide.jpg" style="width:100%" alt="Forest">
+      <p class="text">Caption Text</p>
+    </li>
+    <li class="fade">
+      <p class="numbertext">2 / 4</p>
+      <img src="./src/image/img_snow_wide.jpg" style="width:100%" alt="Snow Mountain">
+      <p class="text">Caption Two</p>
+    </li>
+    <li class="fade">
+      <p class="numbertext">3 / 4</p>
+      <img src="./src/image/img_mountains_wide.jpg" style="width:100%" alt="Mountains">
+      <p class="text">Caption Three</p>
+    </li>
+
+    <li class="fade">
+      <p class="numbertext">4 / 4</p>
+      <img src="./src/image/img_lights_wide.jpg" style="width:100%" alt="northern lights">
+      <p class="text">Caption Four</p>
+    </li>
+  </ul>
+  
+      <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+    <!-- Linking external JavaScript file -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
