@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One Page Website</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="./CSS/main.css"/>
+
+  <!-- Link to external JavaScript file; 'defer' ensures it loads after HTML -->
+  <script src="./JS/one_page_website.js" defer></script>
+</head>
+<body>
+
+  <!-- Page Heading -->
+  <h2 style="text-align:center">Lightbox Gallery</h2>
+
+  <!-- Thumbnail images: clicking them opens the modal and displays a slide -->
+  <div class="row">
+    <div class="column">
+      <img src="./src/image/img_nature_wide.jpg" style="width:100%" 
+           onclick="openModal();currentSlide(1)" 
+           class="hover-shadow cursor" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img src="./src/image/img_snow_wide.jpg" style="width:100%" 
+           onclick="openModal();currentSlide(2)" 
+           class="hover-shadow cursor" alt="Snow">
+    </div>
+    <div class="column">
+      <img src="./src/image/img_mountains_wide.jpg" style="width:100%" 
+           onclick="openModal();currentSlide(3)" 
+           class="hover-shadow cursor" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img src="./src/image/img_lights_wide.jpg" style="width:100%" 
+           onclick="openModal();currentSlide(4)" 
+           class="hover-shadow cursor" alt="Northern Lights">
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Close button (X icon) -->
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+      <!-- Slide 1 -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="./src/image/img_nature_wide.jpg" style="width:100%">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="./src/image/img_snow_wide.jpg" style="width:100%">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="./src/image/img_mountains_wide.jpg" style="width:100%">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="./src/image/img_lights_wide.jpg" style="width:100%">
+      </div>
+
+      <!-- Navigation arrows -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption container (displays alt text of active image) -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail navigation inside modal -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="./src/image/img_nature_wide.jpg" style="width:100%" 
+               onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./src/image/img_snow_wide.jpg" style="width:100%" 
+               onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./src/image/img_mountains_wide.jpg" style="width:100%" 
+               onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./src/image/img_lights_wide.jpg" style="width:100%" 
+               onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
